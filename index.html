@@ -15,10 +15,10 @@
 <body>
      <header>
           <!-- navbar start here -->
-          <div class="navbar bg-slate-700 px-4">
+          <div class="navbar bg-slate-700 px-6">
                <div class="flex-1">
-                 <img src="./images/logo.png" class="h-16" alt="">
-                 <p class="text-white text-xl md:text-4xl font-bold">PIXEL STORE</p>
+                 <img src="./images/logo.png" class="lg:h-16 h-10" alt="">
+                 <p class="text-white text-xl md:text-2xl xl:text-4xl font-bold">PIXEL STORE</p>
                </div>
                <div class="flex-none gap-2 items-center">
                  <ul class="items-center hidden md:flex">
@@ -32,9 +32,10 @@
                          <a href="" class="text-xl text-white font-bold"><i class="fa-solid fa-trash mr-2 text-warning"></i>Recycle Bin</a>
                     </li>
                     <li class="ml-5 mr-4 relative">
-                         <a href="" class="text-xl text-white font-bold"><i
+                         <label for="my-drawer-4" class="drawer-button cursor-pointer"><i
                               class="fa-solid fa-cart-shopping mr-2 text-warning text-2xl"
-                            ></i></a>
+                            ></i></label>
+                         <a href="" class="text-xl text-white font-bold"></a>
                             <div class="badge badge-secondary absolute right-[-50%] top-[-30%] ">
                               <span id="badge-count">0</span>
                             </div>
@@ -43,23 +44,52 @@
                  <!-- dropdown for mobile device  -->
                  <div class="dropdown dropdown-end md:hidden">
                     <label tabindex="0" class="btn btn-ghost ">
-                      <div class="w-10">
+                      <div class="right-0">
                          <i class="fa-solid fa-bars text-warning"></i>
                       </div>
                     </label>
                     <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
                       <li>
-                        <a class="justify-between">
-                          Profile
-                        </a>
+                         <a href="" class="text-base text-black "><i class="fa-solid fa-house mr-2 "></i>Home</a>
                       </li>
-                      <li><a>Settings</a></li>
-                      <li><a>Logout</a></li>
+                      <li><a href="" class="text-base "><i class="fa-solid fa-trash mr-2 "></i>Recycle Bin</a></li>
+                      <li><a href="" class="text-base "><i class="fa-solid fa-heart mr-2 "></i>Wishlist</a></li>
+                      <li><a href="" class="text-base "><i class="fa-solid fa-cart-shopping mr-2 "></i>cart</a></li>
+                      
                     </ul>
                   </div>
                </div>
              </div>
-          <!-- navbar ends here  -->
+          <!-- navbar ends here  -->     
      </header>
+     
+     <!-- drawer starts here  -->
+     <div class="drawer drawer-end">
+          <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content">
+            <!-- Page content here -->
+            <h1 class="text-center text-2xl py-2 ">Find your best one</h1>
+            <div class="card card-compact bg-base-100 shadow-xl">
+               <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+               <div class="card-body">
+                 <h2 class="card-title">Shoes!</h2>
+                 <p>If a dog chews shoes whose shoes does he choose?</p>
+                 <div class="card-actions justify-end">
+                   <button class="btn btn-primary">Buy Now</button>
+                 </div>
+               </div>
+             </div>
+            
+          </div> 
+          <div class="drawer-side">
+            <label for="my-drawer-4" class="drawer-overlay"></label>
+            <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+              <!-- Sidebar content here -->
+              <li><a>Sidebar Item 1</a></li>
+              <li><a>Sidebar Item 2</a></li>
+            </ul>
+          </div>
+        </div>
+     <!-- drawer ends here  -->
 </body>
 </html>
