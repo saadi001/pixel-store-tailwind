@@ -5,10 +5,61 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Pixel store</title>
+     <!-- tailwind  -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- daisyui -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.28.0/dist/full.css" rel="stylesheet" type="text/css" />
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
      <header>
-          
+          <!-- navbar start here -->
+          <div class="navbar bg-slate-700 px-4">
+               <div class="flex-1">
+                 <img src="./images/logo.png" class="h-16" alt="">
+                 <p class="text-white text-xl md:text-4xl font-bold">PIXEL STORE</p>
+               </div>
+               <div class="flex-none gap-2 items-center">
+                 <ul class="items-center hidden md:flex">
+                    <li class="ml-5">
+                         <a href="" class="text-xl text-white font-bold"><i class="fa-solid fa-house mr-2 text-warning"></i>Home</a>
+                    </li>
+                    <li class="ml-5">
+                         <a href="" class="text-xl text-white font-bold"><i class="fa-solid fa-heart mr-2 text-warning"></i>Wishlist</a>
+                    </li>
+                    <li class="ml-5">
+                         <a href="" class="text-xl text-white font-bold"><i class="fa-solid fa-trash mr-2 text-warning"></i>Recycle Bin</a>
+                    </li>
+                    <li class="ml-5 mr-4 relative">
+                         <a href="" class="text-xl text-white font-bold"><i
+                              class="fa-solid fa-cart-shopping mr-2 text-warning text-2xl"
+                            ></i></a>
+                            <div class="badge badge-secondary absolute right-[-50%] top-[-30%] ">
+                              <span id="badge-count">0</span>
+                            </div>
+                    </li>
+                 </ul>
+                 <!-- dropdown for mobile device  -->
+                 <div class="dropdown dropdown-end md:hidden">
+                    <label tabindex="0" class="btn btn-ghost ">
+                      <div class="w-10">
+                         <i class="fa-solid fa-bars text-warning"></i>
+                      </div>
+                    </label>
+                    <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </div>
+               </div>
+             </div>
+          <!-- navbar ends here  -->
      </header>
 </body>
 </html>
